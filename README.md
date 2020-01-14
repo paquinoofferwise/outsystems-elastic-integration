@@ -1,0 +1,1 @@
+# outsystems-elastic-integration
