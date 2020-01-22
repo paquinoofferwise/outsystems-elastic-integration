@@ -1,0 +1,4 @@
+MESSAGE_DURATION ([0-9]+) ms
+MESSAGE_DURATION_CUSTOM ([0-9]+) seconds
+MESSAGE_OBJECT ([a-zA-Z0-9._-]+)\stook
+MESSAGE_OBJECT_2 (^[a-zA-Z._-]+)
