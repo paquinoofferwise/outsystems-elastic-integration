@@ -1,0 +1,44 @@
+#----------------------------------------------------------------------------------------------------
+# Script Information
+#----------------------------------------------------------------------------------------------------
+# Important!
+#
+# This script must be saved in "/etc/sysconfig" folder with the name "logstash". After that it must
+# have at least "600" permissions (use chmod for this setting).
+#
+#----------------------------------------------------------------------------------------------------
+
+#----------------------------------------------------------------------------------------------------
+# JDBC Settings
+#----------------------------------------------------------------------------------------------------
+# JDBC_LIBRARY: It is the full path for MSSQL JDBC Driver installed.
+# JDBC_STRING: It is the connection string to SQL Server database.
+# JDBC_TRACK_COLUMN: It is the column used for tracking last imported row from SQL Server.
+# JDBC_SCHEDULE: It is the schedule for import data. It is a Crontab-like schedule.
+#----------------------------------------------------------------------------------------------------
+
+JDBC_LIBRARY="/var/opt/elastic/sqljdbc_7.4/enu/mssql-jdbc-7.4.1.jre8.jar"
+JDBC_STRING="jdbc:sqlserver://SERVER_NAME:PORT_NUMBER;database=DATABASE_NAME;user=USER_NAME;password=USER_PASSWORD;loginTimeout=30;"
+JDBC_TRACK_COLUMN="instant_unix"
+JDBC_SCHEDULE="*/5 * * * *"
+
+#----------------------------------------------------------------------------------------------------
+# Data Settings
+#----------------------------------------------------------------------------------------------------
+# DATA_CUSTOMER_NAME: It is used for multiple customers on the same Elasticsearch cluster.
+# DATA_LOCATION_NAME: It is used for multiple locations for the same customer.
+# DATA_ENVIRONMENT_NAME: It is used for multiple environments like dev, qa, prod, etc.
+#----------------------------------------------------------------------------------------------------
+
+DATA_CUSTOMER_NAME="Sapphire"
+DATA_LOCATION_NAME="Linda-a-Velha"
+DATA_ENVIRONMENT_NAME="Development"
+
+#----------------------------------------------------------------------------------------------------
+# Elasticsearch Settings
+#----------------------------------------------------------------------------------------------------
+# ES_HOSTS: It is the name(s) of cluster node(s).
+# ES_PORT: It is the port where the ES is listening to.
+#----------------------------------------------------------------------------------------------------
+ES_HOSTS="http://localhost"
+ES_PORT="9200"
