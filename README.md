@@ -1,6 +1,6 @@
 # outsystems-elastic-integration
 
-**This project contains [Elastic](elastic.co/) accelerators to have greater and faster insights of the [OutSystems](https://www.outsystems.com/) monitoring data.**
+**This project contains [Elastic](https://elastic.co/) accelerators to have greater and faster insights of the [OutSystems](https://www.outsystems.com/) monitoring data.**
 
 **The accelerators are:**
 1. The **_Logstash_ code** to fetch data from the OutSystems Platform
