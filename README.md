@@ -15,7 +15,7 @@ Deeper information of these accelerators are available at this [Wiki](https://gi
     - Reduce time to insights (based in OutSystems monitoring data)
     - Improve troubleshooting capabilities
 
-![Example](https://github.com/OutSystems/outsystems-elastic-integration/blob/master/images/OutSystems_Elastic_Dashboard_A1.PNG)
+![Example](images/outsystems_elastic_dashboard_a1.png)
 
 - **Logstash code**
     - Simplify monitoring data Extract, Transformation and Load (ETL)
